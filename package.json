@@ -4,7 +4,7 @@
   "description": "Desktop version of the Resume Analyzer",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
+    "start": "node server.js",
     "dev:server": "cd server && npm run dev",
     "dev:client": "cd client && npm run dev",
     "electron:dev": "concurrently \"npm run dev:server\" \"wait-on http://localhost:5000/api/health && wait-on http://localhost:5173 && electron .\"",
